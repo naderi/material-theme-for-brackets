@@ -1,0 +1,189 @@
+/* Define some variables used in multiple places */
+@background: #212121;
+@foreground: #dddddd;
+
+/* Code Styling */
+
+.CodeMirror, .CodeMirror-scroll {
+    background-color: @background;
+    color: @foreground;
+}
+
+.CodeMirror-focused .CodeMirror-activeline-background {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
+    box-shadow: inset 15px 0 0 0 #121212;
+}
+
+.CodeMirror-focused .CodeMirror-activeline {
+    .CodeMirror-gutter-elt {
+        background: rgba(0, 0, 0, 0.2);
+        color: #fff;
+    }
+    .inline-widget .CodeMirror-gutter-elt {
+        color: #777;    
+    }
+}
+
+.cm-atom {color: #ff675c;}
+.cm-string {color: #c3e88d;}
+.cm-string-2, .cm-hr {color: #62cfc6;}
+.cm-number {color: #ff675c;}
+.cm-attribute, .cm-plus {color: #ffcb6b; font-style: italic;}
+.cm-def, .cm-property {color: #6edeff;}
+.cm-variable, .cm-variable-2, .cm-variable-3 {color: #ff5370;}
+.cm-operator, .cm-bracket {color: #777;}
+.cm-meta {color: @foreground;}
+.cm-comment {color: #777;}
+.cm-error, .cm-minus {color: #ff5370;}
+.cm-header {color: #c792ea;}
+.cm-link {color: #82aaff; text-decoration: underline;}
+.cm-rangeinfo {color: #6c71c4;}
+.cm-tag {color: #ff5370;}
+.cm-keyword {color: #c792ea;}
+.cm-qualifier, .cm-builtin, .cm-quote {color: #ffcb6b;}
+
+/* Extra CSS */
+
+.CodeMirror-searching {
+    background-color: #c3e88d;
+    &.searching-current-match {
+        background-color: #ffcb6b;
+    }
+}
+
+
+.CodeMirror-cursor {
+    border-left: 1px solid #c5c8c6 !important;
+}
+
+.CodeMirror-gutters {
+    background-color: @background;
+    border-right: none;
+}
+
+.CodeMirror-linenumber {
+    color: #777;
+}
+
+.CodeMirror .CodeMirror-selected {
+    background: #303030;
+}
+.CodeMirror-focused .CodeMirror-selected {
+    background: #121212;
+}
+
+.CodeMirror-matchingbracket, .CodeMirror-matchingtag {
+    /* Ensure visibility against gray inline editor background */
+    background-color: @background;
+    color: #ffcb6b !important;
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+    border-left: none !important;
+    border-bottom: 1px solid #ddd;
+}
+
+/*
+    CodeMirror's use of descendant selectors for certain styling causes problems when editors are
+    nested because, for items in the inner editor, the left-hand clause in the selector will now
+    match either the actual containing CodeMirror instance *OR* the outer "host" CodeMirror instance.
+
+    TODO (issue #324): We'll still have problems if editors can be nested more than one level deep,
+    or if any other descendant-selector-driven CM styles can differ between inner & outer editors
+    (potential problem areas include line wrap and coloring theme: basically, anything in codemirror.css
+    that uses a descandant selector where the CSS class name to the left of the space is something
+    other than a vanilla .CodeMirror)
+ */
+.CodeMirror {
+    .CodeMirror {
+        background: transparent;
+    }
+
+    .CodeMirror .CodeMirror-gutters {
+        background: transparent;
+        border-right: none;
+    }
+
+    .CodeMirror .CodeMirror-activeline-background {
+        background: transparent;
+    }
+
+    .CodeMirror .CodeMirror-activeline .CodeMirror-gutter-elt {
+        background: transparent;
+        color: #777;
+    }
+
+    .CodeMirror-focused .CodeMirror-activeline-background {
+        background: #2f2f2f;
+    }
+
+    .CodeMirror-focused .CodeMirror-activeline {
+        .CodeMirror-gutter-elt {
+            background: rgba(0, 0, 0, 0.2);
+            color: #ddd;
+        }
+    }
+}
+
+.CodeMirror-foldgutter-open:after {
+    color: #666;
+}
+.CodeMirror-foldgutter-folded:after {
+    color: #aaa;
+}
+
+.CodeMirror.over-gutter, .CodeMirror-activeline {
+    .CodeMirror-foldgutter-open:after {
+        color: #888;
+    }
+}
+
+.CodeMirror-foldmarker {
+    border-color: #000;
+    color: #ccc;
+    background-color: #444;
+}
+
+/* Non-editor styling */
+
+.image-view,
+.not-editor {
+    background-color: @background;
+}
+
+.view-pane .image-view {
+    color: @foreground;
+}
+
+
+/**
+ * Extensions
+ * ==========
+ */
+
+/*Brackets UI Theme*/
+/*Sidebar*/
+#sidebar{
+    background: #212121;
+} /*General sidebar style*/
+#sidebar #working-set-list-container{
+    background: #212121;
+} /*Working files style*/
+#sidebar .working-set-header,
+#sidebar .working-set-header-title{
+    background: #212121;
+} /*"Working files" header*/
+
+#sidebar #project-files-container{
+    background: #212121;
+} /*Project files - WITHOUT header*/
+
+
+/*Right toolbar - live preview, extensions*/
+#main-toolbar{
+    background: #212121;
+} /*Whole toolbar*/
+#main-toolbar .buttons{} /*Buttons group*/
