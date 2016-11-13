@@ -4,6 +4,7 @@ Based on "Darker" version of [Material Theme](http://equinsuocha.io/material-the
 ## Requirements:
   * [Consolas font](http://www.fontpalace.com/font-details/Consolas/)
   * [Brackets UI Theming Enable](https://github.com/notasz/brackets-uitheming) (To style all available UI elements in Brackets)
+  * [Color Highlighter](https://github.com/Taraflex/Brackets-Color-Highlighter) (Color highlighter for CSS, LESS, SCSS, SASS and Stylus)
   * [Brackets Icons](https://github.com/ivogabe/Brackets-Icons) (File icons in the file tree)
   * [Brackets](http://brackets.io/), of course
   
