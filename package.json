@@ -1,9 +1,9 @@
 {
-    "name": "naderi.material-theme-for-brackets",
+    "name": "brackets-material-theme-dark",
     "title": "Material Theme (Dark)",
     "description": "Material Theme (Dark) for Brackets",
     "homepage": "https://github.com/naderi/material-theme-for-brackets",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": {
         "name": "Ali Naderi",
         "url": "https://github.com/naderi"
