@@ -1,5 +1,5 @@
 {
-    "name": "brackets-material-theme-dark",
+    "name": "brackets-material-dark-theme",
     "title": "Material Theme (Dark)",
     "description": "Material Theme (Dark) for Brackets",
     "homepage": "https://github.com/naderi/material-theme-for-brackets",
@@ -14,5 +14,5 @@
         "dark": true,
         "addModeClass": true
     },
-    "keywords": ["theme"]
+    "keywords": ["theme","material"]
 }
