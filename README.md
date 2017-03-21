@@ -2,7 +2,7 @@
 Based on "Darker" version of [Material Theme](http://equinsuocha.io/material-theme/) for Sublime Text
 
 ## Requirements:
-  * [Consolas font](http://www.fontpalace.com/font-details/Consolas/)
+  * [Fira Code font](https://github.com/tonsky/FiraCode/releases)
   * [Brackets UI Theming Enable](https://github.com/notasz/brackets-uitheming) (To style all available UI elements in Brackets)
   * [Color Highlighter](https://github.com/Taraflex/Brackets-Color-Highlighter) (Color highlighter for CSS, LESS, SCSS, SASS and Stylus)
   * [Brackets Icons](https://github.com/ivogabe/Brackets-Icons) (File icons in the file tree)
@@ -15,4 +15,4 @@ Based on "Darker" version of [Material Theme](http://equinsuocha.io/material-the
 ![Material Theme Dark for Brackets - CSS File](https://raw.githubusercontent.com/naderi/material-theme-for-brackets/master/screenshots/css.png)
 
 ## Copyright and License
-Copyright &copy; 2016. Released under the [MIT License](https://github.com/naderi/material-theme-for-brackets/blob/master/LICENSE).
+Copyright &copy; 2017. Released under the [MIT License](https://github.com/naderi/material-theme-for-brackets/blob/master/LICENSE).
